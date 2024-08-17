@@ -13,7 +13,7 @@ class ClientSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Client
-        fields = ['id', 'name', 'created_at', 'created_by']
+        fields = ['id', 'name', 'created_at', 'created_by','updated_at']
 
 
 class ProjectSerializer(serializers.ModelSerializer):
