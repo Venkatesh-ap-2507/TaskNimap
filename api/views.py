@@ -3,6 +3,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Client,Project,User
 from .serializers import ClientSerializer,ProjectSerializer,UserSerializer
+from django.contrib.auth import get_user_model
+
+
+User = get_user_model()
 
 class ClientList(APIView):
     def get(self, request):
